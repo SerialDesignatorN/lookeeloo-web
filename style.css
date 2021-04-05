@@ -1,0 +1,21 @@
+body
+{
+    background-color: #000000;
+    font-family: PT Sans;
+    color: #FFFFFF;
+}
+#searchbox
+{
+    font-family: PT Sans;
+    font-weight: 400;
+    background-color: #121212;
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-bottom: auto;
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+    margin-left: 2%;
+    vertical-align: 65%;
+    width: 72%;
+}
