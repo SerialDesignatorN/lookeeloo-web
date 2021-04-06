@@ -20,6 +20,12 @@ body
     width: 72%;
 }
 
+.topcorner {
+  float: right;
+  margin-top: 1%;
+}
+
+
 ::-webkit-scrollbar {
   width: 11px;
   height: 11px;
@@ -53,3 +59,4 @@ body
 ::-webkit-scrollbar-corner {
   background: transparent;
 }
+
