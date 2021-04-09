@@ -15,7 +15,7 @@
                 <img src="assets/logo.png" width="50">
                 <input type="text" id="searchbox" placeholder="Search Lookeeloo" style="position: relative; bottom: 3%;">
                 <i class="material-icons" onclick="upload()" style="position: relative; bottom: 3%; vertical-align: 50%; margin-left: 11%; cursor: pointer;">file_upload</i>
-                <i class="material-icons" style="position: relative; bottom: 3%; vertical-align: 50%; margin-left: 2%">settings</i>
+                <i class="material-icons" onclick="openSettings()" style="position: relative; bottom: 3%; vertical-align: 50%; margin-left: 2%">settings</i>
                 <i class="material-icons topcorner" style="position: relative; bottom: 3%; vertical-align: 50%;">account_circle</i>
             </div>
         </header>
@@ -30,9 +30,16 @@
             <a href="video/6382939/player.html">
                 <img src="video/6382939/6382939.png" width="350" style="margin-left: 1%;" title="Emo nerd smashes his room (TeRa: Mad of Fire) by Lain">
             </a>
+            <a href="video/6291021/player.html">
+                <img src="video/6291021/6291021.jpg" height="198" style="margin-left: 1%;" title="Toy Story 3">
+            </a>
         </div>
         <div class="library-row-2">
 
         </div>
+        <dialog id="window">
+            <h3>Settings</h3>
+            <button id="exit" onclick="closeSettings()">Save and Exit</button>
+        </dialog>
     </body>
 </html>
