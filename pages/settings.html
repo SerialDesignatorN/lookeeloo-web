@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Configure Lookeeloo settings</title>
+        <link rel="shortcut icon" type="image/jpg" href="assets/logo.png"/>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <img src="assets/logo.png" width="50">
+                <input type="text" id="searchbox" placeholder="Search Lookeeloo" style="position: relative; bottom: 3%;">
+                <i class="material-icons" onclick="upload()" style="position: relative; bottom: 3%; vertical-align: 50%; margin-left: 11%; cursor: pointer;">file_upload</i>
+                <i class="material-icons" onclick="openSettings()" style="position: relative; bottom: 3%; vertical-align: 50%; margin-left: 2%">settings</i>
+                <i class="material-icons topcorner" style="position: relative; bottom: 3%; vertical-align: 50%;">account_circle</i>
+            </div>
+        </header>
+        <h1 style="font-family: PT Sans; font-size: 29px; font-weight: 700; margin-left: 1.2%;">Settings (Will be saved automatically)</h1>
+        <div class="container" style="overflow: hidden;">
+            <div class="leftPanel" style="float: left;">
+                <h2>General</h2>
+                <p>Audio Configuration</p>
+                <select class="spanchooser">
+                    <option>Dolby Stereo</option>
+                    <option>Dolby Surround 7.1</option>
+                    <option>Dolby Atmos</option>
+                    <option style="border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;">DTS Stereo</option>
+                </select>
+                <h3>Audio Balance & EQ</h3>
+                <p id="lValue">L: 50</p>
+                <input type="range" value="50" max="100" min="0" style="margin-left: 1.2%;" id="lBal" onchange="readLValue()">
+                <p id="rValue">R: 50</p>
+                <input type="range" value="50" max="100" min="0" style="margin-left: 1.2%;" id="rBal" onchange="readRValue()">
+            </div>
+            <div class="rightPanel" style="margin-left: 1%; float: left; overflow: hidden;">
+                <h3>Video Settings</h3>
+                <p>Playback Speed</p>
+                <select class="spanchooser">
+                    <option>0.25x</option>
+                    <option>0.5x</option>
+                    <option>0.75x</option>
+                    <option selected>1x</option>
+                    <option>1.25x</option>
+                    <option>1.5x</option>
+                    <option>1.75x</option>
+                    <option>2x</option>
+                </select>
+                <p>Resolution</p>
+                <select class="spanchooser">
+                    <option>Automatic</option>
+                    <option>144p</option>
+                    <option>240p</option>
+                    <option>360p</option>
+                    <option>480p</option>
+                    <option>720p</option>
+                    <option>1080p</option>
+                    <option disabled>4K</option>
+                    <option disabled>8K</option>
+                </select>
+                <p id="bitrate">Bitrate: 2.3Mbps</p>
+                <input type="range" min="1.0" max="50.0" id="bitrateVal" value="2.3" onchange="changeBitrate()">
+                <p>Frame rate:</p>
+                <select class="spanchooser">
+                    <option>5 fps</option>
+                    <option>12 fps</option>
+                    <option>24 fps</option>
+                    <option selected>30 fps</option>
+                    <option>60 fps</option>
+                    <option>120 fps</option>
+                    <option disabled>240 fps</option>
+                    <option disabled>360 fps</option>
+                    <option disabled>480 fps</option>
+                </select>
+            </div>
+            <div class="finalPanel" style="overflow: hidden;">
+                <h3>Other Settings</h3>
+                <input type="checkbox" name="autoplay">
+                <label for="autoplay">Autoplay next video</label>
+                <br>
+                <input type="checkbox" name="cookie" checked>
+                <label for="cookie">Enable cookies</label>
+                <br>
+                <input type="checkbox" name="devmode">
+                <label for="devmode">Developer Mode</label>
+                <br>
+                <h3 style="color: red;">Danger Zone</h3>
+                <p style="color: red;">Change Email</p>
+                <input type="text" class="spanchooser" value="Email">
+                <br>
+                <button class="planchooser" style="color: red;">Cancel Subscription</button>
+                <br>
+                <button class="planchooser" style="color: red;" onclick="window.close();">Delete account and leave Lookeeloo</button>
+            </div>
+        </div>
+    </body>
+</html>
