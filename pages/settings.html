@@ -6,6 +6,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
         <title>Configure Lookeeloo settings</title>
         <link rel="shortcut icon" type="image/jpg" href="assets/logo.png"/>
     </head>
@@ -19,7 +22,7 @@
                 <i class="material-icons topcorner" style="position: relative; bottom: 3%; vertical-align: 50%;">account_circle</i>
             </div>
         </header>
-        <h1 style="font-family: PT Sans; font-size: 29px; font-weight: 700; margin-left: 1.2%;">Settings (Will be saved automatically)</h1>
+        <h1 style="font-family: Source Sans Pro; font-size: 29px; font-weight: 700; margin-left: 1.2%;">Settings (Will be saved automatically)</h1>
         <div class="container" style="overflow: hidden;">
             <div class="leftPanel" style="float: left;">
                 <h2>General</h2>
@@ -32,9 +35,9 @@
                 </select>
                 <h3>Audio Balance & EQ</h3>
                 <p id="lValue">L: 50</p>
-                <input type="range" value="50" max="100" min="0" style="margin-left: 1.2%;" id="lBal" onchange="readLValue()">
+                <input type="range" value="50" max="100" min="0" style="margin-left: 1.2%;" id="lBal" oninput="readLValue()">
                 <p id="rValue">R: 50</p>
-                <input type="range" value="50" max="100" min="0" style="margin-left: 1.2%;" id="rBal" onchange="readRValue()">
+                <input type="range" value="50" max="100" min="0" style="margin-left: 1.2%;" id="rBal" oninput="readRValue()">
             </div>
             <div class="rightPanel" style="margin-left: 1%; float: left; overflow: hidden;">
                 <h3>Video Settings</h3>
@@ -62,7 +65,8 @@
                     <option disabled>8K</option>
                 </select>
                 <p id="bitrate">Bitrate: 2.3Mbps</p>
-                <input type="range" min="1.0" max="50.0" id="bitrateVal" value="2.3" onchange="changeBitrate()">
+
+                <input type="range" min="1.0" max="50.0" step="0.1" id="bitrateVal" value="2.3" oninput="changeBitrate()">
                 <p>Frame rate:</p>
                 <select class="spanchooser">
                     <option>5 fps</option>
@@ -97,4 +101,7 @@
             </div>
         </div>
     </body>
+
 </html>
+
+
