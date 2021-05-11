@@ -1,12 +1,13 @@
+
 body
 {
     background-color: #000000;
-    font-family: PT Sans;
+    font-family: Source Sans Pro;
     color: #FFFFFF;
 }
 #searchbox
 {
-    font-family: PT Sans;
+    font-family: Source Sans Pro;
     font-weight: 400;
     background-color: #121212;
     color: #FFFFFF;
@@ -68,7 +69,7 @@ h1, h2, h3, h4, p, select
 
 .spanchooser
 {
-    font-family: PT Sans;
+    font-family: Source Sans Pro;
     font-size: 16px;
     background-color: #000000;
     color: #ffffff;
@@ -84,7 +85,7 @@ h1, h2, h3, h4, p, select
     background-color: #000000;
     color: #FFFFFF;
     border-width: 2px;
-    font-family: PT Sans;
+    font-family: Source Sans Pro;
     font-size: 14px;
     padding: 0.4%;
     border-radius: 23px;
@@ -98,7 +99,7 @@ h1, h2, h3, h4, p, select
     background-color: #121212;
     color: #FFFFFF;
     border-width: 2px;
-    font-family: PT Sans;
+    font-family: Source Sans Pro;
     transition: all 0.2s;
     font-size: 14px;
     padding: 0.4%;
@@ -144,4 +145,5 @@ h1, h2, h3, h4, p, select
 }
 dialog {
   width: 500px;
+>>>>>>> bb137ce78ffada58f0c80b9494bd0c7074795b6e
 }
