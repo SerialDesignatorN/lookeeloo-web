@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
 body
 {
@@ -62,7 +61,6 @@ body
   background: transparent;
 }
 
-<<<<<<< HEAD
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -94,6 +92,73 @@ body
   font-weight: bold;
 }
 
+.leftPanel {
+    float: left;
+}
+
+.container {
+    display: inline-block;
+}
+
+.epInf {
+    background-color: #323232;
+    display: block;
+    font-family: Source Sans Pro;
+    font-size: 24px;
+    padding: 1%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 23%;
+}
+
+.play {
+    background-color: #e9e9e9;
+    padding: 2%;
+    width: 78%;
+    color: #121212;
+    transition: all 0.2 ease;
+    border: none;
+    text-align: center;
+    font-family: Source Sans Pro;
+    vertical-align: middle;
+    border-radius: 30px;
+    display: inline-block;
+    line-height: normal;
+    font-size: 20px;
+}
+.play:hover {
+    background-color: white;
+    padding: 2%;
+    width: 85%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #121212;
+    border: none;
+    text-align: center;
+    font-family: Source Sans Pro;
+    vertical-align: middle;
+    border-radius: 30px;
+    display: inline-block;
+    line-height: normal;
+    font-size: 20px;
+}
+
+.play::after {
+    background-color: #e9e9e9;
+    padding: 2%;
+    width: 78%;
+    color: #121212;
+    transition: all 0.2 ease;
+    border: none;
+    text-align: center;
+    font-family: Source Sans Pro;
+    vertical-align: middle;
+    border-radius: 30px;
+    display: inline-block;
+    line-height: normal;
+    font-size: 20px;
+}
+
 .close:hover,
 .close:focus {
   color: black;
@@ -102,6 +167,5 @@ body
 }
 dialog {
   width: 500px;
-}
-=======
 >>>>>>> bb137ce78ffada58f0c80b9494bd0c7074795b6e
+}
