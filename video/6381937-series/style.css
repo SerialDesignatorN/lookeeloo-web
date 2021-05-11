@@ -1,12 +1,13 @@
+
 body
 {
     background-color: #000000;
-    font-family: PT Sans;
+    font-family: Source Sans Pro;
     color: #FFFFFF;
 }
 #searchbox
 {
-    font-family: PT Sans;
+    font-family: Source Sans Pro;
     font-weight: 400;
     background-color: #121212;
     color: #FFFFFF;
@@ -102,7 +103,7 @@ body
 .epInf {
     background-color: #323232;
     display: block;
-    font-family: PT Sans;
+    font-family: Source Sans Pro;
     font-size: 24px;
     padding: 1%;
     border-top-left-radius: 15px;
@@ -118,7 +119,7 @@ body
     transition: all 0.2 ease;
     border: none;
     text-align: center;
-    font-family: PT Sans;
+    font-family: Source Sans Pro;
     vertical-align: middle;
     border-radius: 30px;
     display: inline-block;
@@ -134,7 +135,7 @@ body
     color: #121212;
     border: none;
     text-align: center;
-    font-family: PT Sans;
+    font-family: Source Sans Pro;
     vertical-align: middle;
     border-radius: 30px;
     display: inline-block;
@@ -150,7 +151,7 @@ body
     transition: all 0.2 ease;
     border: none;
     text-align: center;
-    font-family: PT Sans;
+    font-family: Source Sans Pro;
     vertical-align: middle;
     border-radius: 30px;
     display: inline-block;
@@ -166,4 +167,5 @@ body
 }
 dialog {
   width: 500px;
+>>>>>>> bb137ce78ffada58f0c80b9494bd0c7074795b6e
 }
