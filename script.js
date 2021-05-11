@@ -1,4 +1,4 @@
-var txt;
+
 
 function upload()
 {
